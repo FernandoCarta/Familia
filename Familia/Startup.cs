@@ -25,11 +25,21 @@ namespace Familia
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = WebApplication.CreateBuilder();
+            var configuration = builder.Configuration;
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(300);
                 options.Cookie.HttpOnly = true;
             });
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = configuration["Authentication:1195223321056822"];
+                facebookOptions.AppSecret = configuration["Authentication:Facebook:773989b1a161baf3181f047c37a16ab1"];
+            });
+
+
             services.AddControllersWithViews(options =>
             options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));//con este componente nos va a permitir usar el modelo MVC
 
