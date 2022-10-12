@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj": {}
+    "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj": {
+    "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
+        "projectUniqueName": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
         "projectName": "Familia",
-        "projectPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
-        "packagesPath": "C:\\Users\\carta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\obj\\",
+        "projectPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
+        "packagesPath": "C:\\Users\\gusg1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\carta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gusg1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +48,10 @@
             "Microsoft.AspNetCore.Authentication.Facebook": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

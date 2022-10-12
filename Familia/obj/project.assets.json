@@ -69,6 +69,22 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.AspNetCore.Authentication.Google/6.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.0": {
         "type": "package",
         "compile": {
@@ -3559,6 +3575,21 @@
         "lib/net6.0/Microsoft.AspNetCore.Authentication.Facebook.xml",
         "microsoft.aspnetcore.authentication.facebook.6.0.9.nupkg.sha512",
         "microsoft.aspnetcore.authentication.facebook.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.Google/6.0.10": {
+      "sha512": "D9ZgmzDU78XXp1j/Rk6JOYYhB4/lVtUlSfcBYMNF4ieSNm5gM2d+3RALxGZEjQxd6QL/7YGdCd3jygsLNltm1w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/6.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.6.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.0": {
@@ -9875,25 +9906,31 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.Facebook >= 6.0.9",
+      "Microsoft.AspNetCore.Authentication.Google >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.9"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carta\\.nuget\\packages\\": {}
+    "C:\\Users\\gusg1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
+      "projectUniqueName": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
       "projectName": "Familia",
-      "projectPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
-      "packagesPath": "C:\\Users\\carta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\obj\\",
+      "projectPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
+      "packagesPath": "C:\\Users\\gusg1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\carta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gusg1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9901,6 +9938,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9922,6 +9960,10 @@
           "Microsoft.AspNetCore.Authentication.Facebook": {
             "target": "Package",
             "version": "[6.0.9, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[6.0.10, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

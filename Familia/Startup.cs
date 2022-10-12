@@ -18,6 +18,7 @@ namespace Familia
     public class Startup
     {
         public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,6 +26,15 @@ namespace Familia
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = WebApplication.CreateBuilder();
+            var servicesg = builder.Services;
+            var configuration = builder.Configuration;
+
+            servicesg.AddAuthentication().AddGoogle(googleOptions => {
+                googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+            });
+
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(300);
