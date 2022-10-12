@@ -527,3 +527,4 @@ C:\Users\gusg1\Downloads\Familia\Familia\obj\Debug\net6.0\scopedcss\projectbundl
 C:\Users\gusg1\Downloads\Familia\Familia\obj\Debug\net6.0\Familia.csproj.CopyComplete
 C:\Users\gusg1\Downloads\Familia\Familia\obj\Debug\net6.0\Familia.genruntimeconfig.cache
 C:\Users\gusg1\Downloads\Familia\Familia\obj\Debug\net6.0\ref\Familia.dll
+C:\Users\carta\source\repos\Familia\Familia\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll

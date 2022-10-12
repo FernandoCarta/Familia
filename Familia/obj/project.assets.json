@@ -9905,6 +9905,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "MessagePackAnalyzer >= 2.1.152",
       "Microsoft.AspNetCore.Authentication.Facebook >= 6.0.9",
       "Microsoft.AspNetCore.Authentication.Google >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
@@ -9913,24 +9914,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gusg1\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\carta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
+      "projectUniqueName": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
       "projectName": "Familia",
-      "projectPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\Familia.csproj",
-      "packagesPath": "C:\\Users\\gusg1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusg1\\Downloads\\Familia\\Familia\\obj\\",
+      "projectPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\Familia.csproj",
+      "packagesPath": "C:\\Users\\carta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carta\\source\\repos\\Familia\\Familia\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gusg1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\carta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9938,7 +9934,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9957,6 +9952,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "MessagePackAnalyzer": {
+            "target": "Package",
+            "version": "[2.1.152, )"
+          },
           "Microsoft.AspNetCore.Authentication.Facebook": {
             "target": "Package",
             "version": "[6.0.9, )"

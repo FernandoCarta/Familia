@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Familia/1.0.0": {
         "dependencies": {
+          "MessagePackAnalyzer": "2.1.152",
           "Microsoft.AspNetCore.Authentication.Facebook": "6.0.9",
           "Microsoft.AspNetCore.Authentication.Google": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",

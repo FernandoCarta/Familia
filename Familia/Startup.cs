@@ -35,6 +35,13 @@ namespace Familia
                 googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
             });
 
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = configuration["Authentication:Facebook:AppSecret"];
+                facebookOptions.AccessDeniedPath = "/AccessDeniedPathInfo";
+            });
+
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(300);

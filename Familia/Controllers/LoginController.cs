@@ -151,7 +151,7 @@ namespace Familia.Controllers
         }
 
 
-        public IActionResult Start(Login login)
+        public IActionResult Login(Login login)
         {
             if (ModelState.IsValid)
             {
